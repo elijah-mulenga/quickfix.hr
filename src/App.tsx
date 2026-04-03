@@ -1,3 +1,4 @@
+import ClientsPage from "@/pages/ClientsPage";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -31,6 +32,7 @@ const App = () => (
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/compliance" element={<CompliancePage />} />
               <Route path="/industries" element={<IndustriesPage />} />
+              <Route path="/clients" element={<ClientsPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
